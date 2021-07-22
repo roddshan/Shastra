@@ -413,6 +413,17 @@ https://github.com/CyberSecurityUP/Guide-CEH-Practical-Master
         
 https://github.com/JohnHammond/ctf-katana#readme
              
+DoS
+             
+             https://gbhackers.com/kali-linux-tutorial-dos-attack/
+             
+             https://linuxhint.com/hping3/
+             
+             HOIC in Windows
+             
+        
+
+             
              
              
 
